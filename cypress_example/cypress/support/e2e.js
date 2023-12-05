@@ -21,3 +21,4 @@ import './commands'
 
 require('cypress-xpath') 
 require('@4tw/cypress-drag-drop')
+require('cypress-file-upload')
