@@ -26,3 +26,15 @@
 
 /// <reference types="Cypress" />
 /// <reference types="cypress-xpath" />
+
+// custom command for clicking on the link using label
+Cypress.Commands.add('clickLink', (label) => {
+
+    cy.get('a').contains(label).click()
+})
+
+Cypress.Commands.add('loginapp', (email, pass) => {
+    cy.get('#Email').type(email)
+    cy.get('#Password').type(pass)
+    cy.get("button[class='button-1 login-button']").click()
+})
