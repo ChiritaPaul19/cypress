@@ -14,7 +14,7 @@ describe('http Requests', () => {
                 secondHash: "987654321asdfgh"
             }
         }).its('status')
-        .should('equal', 200)
+            .should('equal', 200)
     })
 
     it('PUT', () => {
@@ -23,7 +23,7 @@ describe('http Requests', () => {
             url: 'https://postman-echo.com/put',
             body: 'This is expected to be sent back as part of response body.'
         }).its('status')
-        .should('equal', 200)
+            .should('equal', 200)
     })
 
     it('DELETE', () => {
@@ -32,6 +32,6 @@ describe('http Requests', () => {
             url: 'https://postman-echo.com/delete',
             body: 'This is expected to be sent back as part of response body.'
         }).its('status')
-        .should('equal', 200)
+            .should('equal', 200)
     })
 })
