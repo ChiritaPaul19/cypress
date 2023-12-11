@@ -1,5 +1,5 @@
-import Login from "../PageObjects/LoginPage"
-import Login2 from "../PageObjects/LoginPage2"
+import Login from "../../PageObjects/LoginPage"
+import Login2 from "../../PageObjects/LoginPage2"
 
 describe('POM example - first approach', () => {
     it('Log in with POM', () => {
