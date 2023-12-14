@@ -1,6 +1,6 @@
 describe('API Chaining', () => {
 
-    it('Cookies dunctionality', () => {
+    it('Chaining', () => {
         cy.request({
             method: 'GET',
             url: 'https://jsonplaceholder.typicode.com/posts',
